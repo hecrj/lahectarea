@@ -64,10 +64,20 @@ namespace Sea\Core\Components\Routing\Routes;
  * subdomain the 'admin' module will be active.
  */
 
-$routes = new RouteCollection();
+$blog = new RouteCollection('blog');
 
-$routes->match('root', '/', 'index#index');
+	$blog->match('home', '/:page', 'index#index');
+	$blog->match('read_post', '/articulo/:permalink', 'articulos#leer');
+	$blog->match('posts', '/articulos/:page', 'articulos#index');
+	$blog->match('explore_cattegory', '/categoria/:permalink/:page',
+		'articulos#categoria');
+	$blog->match('explore_tag', '/tag/:permalink/:page', 'articulos#tag');
+
+$admin = new RouteCollection('admin');
+	$admin->match('home', '/:page', 'articulos#index');
+	$admin->match('posts', '/articulos/:page', 'articulos#index');
 
 return array(
-	'www'	=>	$routes
+	'www'	=>	$blog,
+	'admin'	=>	$admin
 );
