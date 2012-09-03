@@ -10,14 +10,19 @@ class HelperInjector extends DynamicInjector
 	protected $classes = array(
 		'cache'				=>	'Sea\\Core\\Helpers\\Cache',
 		'form'				=>	'Sea\\Core\\Helpers\\Form\\Form',
-		'javascript'		=>	'Sea\\Core\\Helpers\\Javascript'
+		'includes'			=>	'Sea\\App\\Helpers\\Includes',
+		'markdown'			=>	'Sea\\App\\Helpers\\Markdown',
+		'simplenav'			=>	'Sea\\App\\Helpers\\SimpleNav',
+		'table'				=>	'Sea\\App\\Helpers\\Table',
+		'time'				=>	'Sea\\App\\Helpers\\Time'
 	);
 
 	protected $dependencies = array(	
 		'cache'			=>	array('templating'),
 		'form'			=>	array('security', 'request'),
+		'simplenav'		=>	array('request')
 	);
 	
-	protected $shared = array('cache', 'javascript');
+	protected $shared = array('cache', 'includes', 'markdown', 'time');
 	
 }
