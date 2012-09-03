@@ -44,6 +44,7 @@ footer { font-size: 0.8em; text-align: center; }
 <section class="error">
 		<h3>Some errors have ocurred during your request:</h3>
 		<p><?= $e->getMessage(); ?></p>
+		<?= $e->getTraceAsString() ?>
 </section>
 <footer>Edit this page at your will in: <strong><?= __FILE__ ?></strong></footer>
 <?php endif; ?>
