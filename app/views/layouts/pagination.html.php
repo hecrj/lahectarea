@@ -2,7 +2,7 @@
 	<ul>
 <?php if($pagination->hasPrevious()): ?>
 		<li>
-			<a href="<?= $pagination->getPreviousPath() ?>">&larr; Previous</a>
+			<a href="<?= $pagination->getPreviousPath() ?>">&larr; Anterior</a>
 		</li>
 <?php endif; ?>
 <?php if($pagination->hasPreviousHidden()): ?>
@@ -22,7 +22,7 @@
 <?php endif; ?>
 <?php if($pagination->hasNext()): ?>
 		<li>
-			<a href="<?= $pagination->getNextPath() ?>">Next &rarr;</a>
+			<a href="<?= $pagination->getNextPath() ?>">Siguiente &rarr;</a>
 		</li>
 <?php endif; ?>		
 	</ul>
