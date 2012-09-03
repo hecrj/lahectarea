@@ -1,8 +1,10 @@
 <?php
 
 # UserBase abstract model
-abstract class UserBase extends Model
-{	
+abstract class UserBase extends Sea\Core\Model
+{
+	public $remember = false;
+	
 	// Stores hash of roles
 	protected static $hash_roles = array();
 	
@@ -80,6 +82,9 @@ abstract class UserBase extends Model
 			// Return if the user role is in $roles_group
 			return in_array($this->get_role(), $roles_group);
 	}
+	
+	public function isRole($role)
+	{
+		return $role == $this->get_role();
+	}
 }
-
-?>
