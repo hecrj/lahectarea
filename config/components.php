@@ -8,7 +8,7 @@ namespace Sea\Core\Components\Auth
 
 namespace Sea\Core\Components\Cookie
 {
-	const DOMAIN = 'yourdomain.com';
+	const DOMAIN = 'lahectarea.es';
 }
 
 namespace Sea\Core\Components\Routing
@@ -20,5 +20,5 @@ namespace Sea\Core\Components\Session
 {
 	const NAME        = 'SID';
 	const NAME_SECURE = 'SID_SECURE';
-	const DOMAIN      = 'yourdomain.com';
+	const DOMAIN      = 'lahectarea.es';
 }
