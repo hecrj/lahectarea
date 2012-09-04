@@ -11,7 +11,7 @@ class HelperInjector extends DynamicInjector
 		'cache'				=>	'Sea\\Core\\Helpers\\Cache',
 		'form'				=>	'Sea\\Core\\Helpers\\Form\\Form',
 		'includes'			=>	'Sea\\App\\Helpers\\Includes',
-		'markdown'			=>	'Sea\\App\\Helpers\\Markdown',
+		'markdown'			=>	'Markdown\\Helper',
 		'simplenav'			=>	'Sea\\App\\Helpers\\SimpleNav',
 		'table'				=>	'Sea\\App\\Helpers\\Table',
 		'time'				=>	'Sea\\App\\Helpers\\Time'
