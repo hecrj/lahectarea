@@ -1,6 +1,6 @@
 <?php
 
-namespace Sea\Core\Helpers\Cache
+namespace Sea\Helpers\Cache
 {
 	const EMULATE = TRUE;
 }

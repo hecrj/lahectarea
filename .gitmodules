@@ -1,5 +1,5 @@
-[submodule "core"]
-	path = core
+[submodule "sea"]
+	path = sea
 	url = git://github.com/hecrj/sea_core.git
 [submodule "vendor/php-activerecord"]
 	path = vendor/php-activerecord

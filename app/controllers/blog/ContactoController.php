@@ -1,7 +1,7 @@
 <?php
 
-namespace Sea\App\Controllers\Blog;
-use Sea\Core\Controller;
+namespace App\Controllers\Blog;
+use Sea\Controller;
 
 class ContactoController extends Controller
 {

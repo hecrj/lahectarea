@@ -1,7 +1,7 @@
 <?php
 
-namespace Sea\App\Helpers;
-use Sea\Core\Components\Routing\RequestInterface;
+namespace App\Helpers;
+use Sea\Components\Routing\RequestInterface;
 
 class SimpleNav
 {

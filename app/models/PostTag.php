@@ -1,6 +1,6 @@
 <?php
 
-class PostTag extends Sea\Core\Model
+class PostTag extends Sea\Model
 {
 	static $belongs_to = array(
 		array('post'),

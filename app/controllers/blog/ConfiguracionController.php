@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use Sea\Core\Controller;
+use Sea\Controller;
 
 class ConfiguracionController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sea\App;
+namespace App;
 const EMAIL  = 'soporte@lahectarea.es';
 
 # Load components configuration

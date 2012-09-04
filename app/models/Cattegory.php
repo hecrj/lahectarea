@@ -1,6 +1,6 @@
 <?php
 
-class Cattegory extends Sea\Core\Model
+class Cattegory extends Sea\Model
 {
 	static $has_many = array(
 		array('postcattegories'),

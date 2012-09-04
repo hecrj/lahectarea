@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers\Blog;
-use Sea\Core\Controller;
+use Sea\Controller;
 use Post;
 
 class RssController extends Controller

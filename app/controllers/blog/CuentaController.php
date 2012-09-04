@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use Sea\Core\Controller;
+use Sea\Controller;
 use User;
 
 class CuentaController extends Controller

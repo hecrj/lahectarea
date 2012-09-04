@@ -1,6 +1,6 @@
 <?php
 
-namespace Sea\App\Helpers;
+namespace App\Helpers;
 
 class Includes {
 	private $includes;

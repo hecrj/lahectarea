@@ -2,7 +2,7 @@
 
 use ActiveRecord\Utils;
 
-class ManyToMany extends Sea\Core\Model
+class ManyToMany extends Sea\Model
 {
 	private $newValues = array();
 	private $classField;

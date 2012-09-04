@@ -1,7 +1,7 @@
 <?php
 
-namespace Sea\App\Controllers\Blog;
-use Sea\Core\Controller;
+namespace App\Controllers\Blog;
+use Sea\Controller;
 use Post, Cattegory, Tag;
 
 class ArticulosController extends Controller

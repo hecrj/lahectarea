@@ -1,6 +1,6 @@
 <?php
 
-namespace Sea\Core\Components\Routing\Routes;
+namespace Sea\Components\Routing\Routes;
 
 /**
  * Here you can configure the enrouting internal redirection.

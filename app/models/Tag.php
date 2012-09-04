@@ -1,6 +1,6 @@
 <?php
 
-class Tag extends Sea\Core\Model
+class Tag extends Sea\Model
 {
 	static $has_many = array(
 		array('posttags'),

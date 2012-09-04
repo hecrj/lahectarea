@@ -1,29 +1,29 @@
 <?php
 
-namespace Sea\App\Components;
-use Sea\Core\Components\DynamicInjector;
+namespace App\Components;
+use Sea\Components\DynamicInjector;
 
 class ComponentInjector extends DynamicInjector
 {
 	
 	protected $classes = array(
-		//'auth'			=>	'Sea\\Core\\Components\\Auth\\HTTP', // Uncomment this line to activate Auth component
-		'cache'			=>	'Sea\\Core\\Components\\Cache\\Cache',
-		'cookie'		=>	'Sea\\Core\\Components\\Cookie',
-		'compiler'		=>	'Sea\\Core\\Components\\Routing\\Routes\\RouteCompiler',
-		'context'		=>	'Sea\\Core\\Components\\Routing\\Context',
-		'finder'		=>	'Sea\\Core\\Components\\Templating\\Finder',
-		'generator'		=>	'Sea\\Core\\Components\\Routing\\Generators\\URLGenerator',
-		'helpers'		=>	'Sea\\App\\Components\\HelperInjector',
-		'pagination'	=>	'Sea\\Core\\Components\\Pagination\\Pagination',
-		'request'		=>	'Sea\\Core\\Components\\Routing\\Request',
-		'resolvers'		=>	'Sea\\Core\\Components\\Routing\\Resolvers\\ResolverCollection',
-		'router'		=>	'Sea\\Core\\Components\\Routing\\Router',
-		'security'		=>	'Sea\\Core\\Components\\Security',
-		'session'		=>	'Sea\\Core\\Components\\Session',
-		'extractor'		=>	'Sea\\Core\\Components\\Routing\\Resolvers\\ExtractResolver',
-		'matcher'		=>	'Sea\\Core\\Components\\Routing\\Resolvers\\MatchResolver',
-		'templating'	=>	'Sea\\Core\\Components\\Templating\\Engine'
+		//'auth'			=>	'Sea\\Components\\Auth\\HTTP', // Uncomment this line to activate Auth component
+		'cache'			=>	'Sea\\Components\\Cache\\Cache',
+		'cookie'		=>	'Sea\\Components\\Cookie',
+		'compiler'		=>	'Sea\\Components\\Routing\\Routes\\RouteCompiler',
+		'context'		=>	'Sea\\Components\\Routing\\Context',
+		'finder'		=>	'Sea\\Components\\Templating\\Finder',
+		'generator'		=>	'Sea\\Components\\Routing\\Generators\\URLGenerator',
+		'helpers'		=>	'App\\Components\\HelperInjector',
+		'pagination'	=>	'Sea\\Components\\Pagination\\Pagination',
+		'request'		=>	'Sea\\Components\\Routing\\Request',
+		'resolvers'		=>	'Sea\\Components\\Routing\\Resolvers\\ResolverCollection',
+		'router'		=>	'Sea\\Components\\Routing\\Router',
+		'security'		=>	'Sea\\Components\\Security',
+		'session'		=>	'Sea\\Components\\Session',
+		'extractor'		=>	'Sea\\Components\\Routing\\Resolvers\\ExtractResolver',
+		'matcher'		=>	'Sea\\Components\\Routing\\Resolvers\\MatchResolver',
+		'templating'	=>	'Sea\\Components\\Templating\\Engine'
 	);
 
 	protected $dependencies = array(

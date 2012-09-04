@@ -1,6 +1,6 @@
 <?php
 
-class PostCattegory extends Sea\Core\Model
+class PostCattegory extends Sea\Model
 {
 	static $belongs_to = array(
 		array('post'),

@@ -1,7 +1,7 @@
 <?php
 
 # UserBase abstract model
-abstract class UserBase extends Sea\Core\Model
+abstract class UserBase extends Sea\Model
 {
 	public $remember = false;
 	
