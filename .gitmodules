@@ -3,7 +3,7 @@
 	url = git://github.com/hecrj/sea_core.git
 [submodule "vendor/php-activerecord"]
 	path = vendor/php-activerecord
-	url = git://github.com/hector0193/php-activerecord.git
+	url = git://github.com/hecrj/php-activerecord.git
 [submodule "vendor/bootstrap"]
 	path = vendor/bootstrap
 	url = git://github.com/twitter/bootstrap.git
