@@ -11,5 +11,3 @@ class Cattegory extends Sea\Model
 		return count($this->posts);
 	}
 }
-
-?>

@@ -145,5 +145,3 @@ class User extends UserBase
 		return $this->name;
 	}
 }
-
-?>

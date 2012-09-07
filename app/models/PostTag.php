@@ -7,5 +7,3 @@ class PostTag extends Sea\Model
 		array('tag')
 	);
 }
-
-?>

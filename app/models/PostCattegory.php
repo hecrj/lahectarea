@@ -7,5 +7,3 @@ class PostCattegory extends Sea\Model
 		array('cattegory')
 	);
 }
-
-?>

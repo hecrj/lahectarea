@@ -7,5 +7,3 @@ class Tag extends Sea\Model
 		array('posts', 'through' => 'posttags')
 	);
 }
-
-?>

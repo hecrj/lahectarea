@@ -133,5 +133,3 @@ class ManyToMany extends Sea\Model
 		}
 	}
 }
-
-?>
