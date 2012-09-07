@@ -39,7 +39,7 @@ footer { font-size: 0.8em; text-align: center; }
 	<p>You have requested the following page:</p>
 	<p><strong>http://<?= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?></strong></p>
 </section>
-<?php if(isset($e)): ?>
+<?php if(App\ENV == 'development' and isset($e)): ?>
 <section class="error">
 		<h3>Some errors have ocurred during your request:</h3>
 		<p><?= $e->getMessage(); ?></p>

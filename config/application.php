@@ -1,7 +1,9 @@
 <?php
 
 namespace App;
-const EMAIL  = 'soporte@lahectarea.es';
+
+const ENV		= 'development';    # Set to current environment
+const EMAIL		= 'soporte@lahectarea.es';
 
 # Load components configuration
 require(__DIR__ . '/components.php');

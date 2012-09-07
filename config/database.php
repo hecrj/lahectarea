@@ -25,6 +25,6 @@ $db = array(
 	),
 	
 	// Default connection
-	'default'	=>	'development'
+	'default'	=>	App\ENV # Current environment as default connection
 	
 );

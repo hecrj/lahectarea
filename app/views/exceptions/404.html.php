@@ -40,7 +40,7 @@ footer { font-size: 0.8em; text-align: center; }
 	<p>It's possible that the website is having some technical problems or it's under manteinance.</p>
 	<p>Please, try again later and if the problem persists, contact the webmaster: <strong><?= App\EMAIL ?></strong></p>
 </section>
-<?php if(isset($e)): ?>
+<?php if(App\ENV == 'development' and isset($e)): ?>
 <section class="error">
 		<h3>Some errors have ocurred during your request:</h3>
 		<p><?= $e->getMessage(); ?></p>
