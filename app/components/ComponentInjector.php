@@ -7,7 +7,7 @@ class ComponentInjector extends DynamicInjector
 {
 	
 	protected $classes = array(
-		//'auth'			=>	'Sea\\Components\\Auth\\HTTP', // Uncomment this line to activate Auth component
+		'auth'			=>	'Sea\\Components\\Auth\\HTTP', // Uncomment this line to activate Auth component
 		'cache'			=>	'Sea\\Components\\Cache\\Cache',
 		'cookie'		=>	'Sea\\Components\\Cookie',
 		'compiler'		=>	'Sea\\Components\\Routing\\Routes\\RouteCompiler',

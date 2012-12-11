@@ -1,0 +1,16 @@
+@import "../vendor/bootstrap/less/responsive";
+@import "variables";
+@import "mixins";
+
+@media (min-width: 1200px) {
+	#form > .full(@gridColumns, @gridColumnWidth1200, @gridGutterWidth1200);
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	#form > .full(@gridColumns, @gridColumnWidth768, @gridGutterWidth768);
+}
+
+@media (max-width: 767px) {
+	input, textarea, select,
+	.uneditable-input { .input-block-level(); }
+}

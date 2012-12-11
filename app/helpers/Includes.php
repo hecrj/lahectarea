@@ -10,7 +10,7 @@ class Includes {
 	}
 	
 	public function local($type, $path) {
-		$this->includes[$type][] = STATIC_URL .'/'. $type .'/'. $path .'.'. $type;
+		$this->includes[$type][] = 'http://static.' . \App\DOMAIN . "/{$type}/{$path}.{$type}";
 		
 		return $this;
 	}

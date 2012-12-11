@@ -1,0 +1,28 @@
+form {
+	margin: 10px 0;
+	
+	.control-group {
+		margin-bottom: 18px;
+	}
+	
+	input, textarea, select { margin-bottom: 0;	}
+	
+	input, select {	font-size: @baseFontSize + 3; }
+	input { height: 30px; }
+	select { height: 35px; }
+	
+	textarea {
+		font-family: @articleContent;
+		font-size: @baseFontSize + 2;
+		line-height: 1.5em;
+	}
+	
+	a.btn {
+		position: relative;
+		top: 2px;
+	}
+}
+
+#form > .full(@gridColumns, @gridColumnWidth, @gridGutterWidth);
+
+.alert form { margin: 10px 0 0 0; }

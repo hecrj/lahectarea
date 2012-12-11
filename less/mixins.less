@@ -1,0 +1,10 @@
+#form {
+	.full (@columns, @gridColumnWidth, @gridGutterWidth) {
+		input, textarea,
+		.uneditable-input {
+			width: ((@gridColumnWidth) * @columns) + (@gridGutterWidth * (@columns - 1)) - 14;
+		}
+		
+		select { #grid > .core.span(@gridColumns); }
+	}
+}

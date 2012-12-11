@@ -3,12 +3,12 @@
 namespace Sea\Components\Auth
 {
 	const KEY_SERVER = 'I am a Key, change me at your will';
-	const URI_LOGIN  = '/account/login';
+	const URI_LOGIN  = '/cuenta/login';
 }
 
 namespace Sea\Components\Cookie
 {
-	const DOMAIN = 'lahectarea.es';
+	const DOMAIN = \App\DOMAIN;
 }
 
 namespace Sea\Components\Routing
@@ -20,5 +20,5 @@ namespace Sea\Components\Session
 {
 	const NAME        = 'SID';
 	const NAME_SECURE = 'SID_SECURE';
-	const DOMAIN      = 'lahectarea.es';
+	const DOMAIN      = \App\DOMAIN;
 }

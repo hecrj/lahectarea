@@ -1,0 +1,49 @@
+.navbar a.brand.pull-right { float: right; }
+
+.subnav {
+	background-color: #EEEEEE;
+    background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    height: 36px;
+	padding: 0 20px;
+	margin: 0 0 10px 0;
+	z-index: 199;
+	
+	&.subnav-fixed {
+		position: fixed;
+		left: 0;
+		top: 40px;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.nav > li > a {
+		border-left: 1px solid #F5F5F5;
+		border-radius: 0 0 0 0;
+		border-right: 1px solid #E5E5E5;
+		margin: 0;
+		padding-bottom: 11px;
+		padding-top: 11px;
+	} 
+	
+	.nav > .active > a, .subnav .nav > .active > a:hover {
+		background-color: #E9E9E9;
+		border-left: 0 none;
+		border-right-color: #DDDDDD;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
+		color: #777777;
+		padding-left: 13px;
+	}
+	
+	.brand {
+		.navbar.brand;
+		color: @grayLight;
+		padding: 8px 20px 12px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

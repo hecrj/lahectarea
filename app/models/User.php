@@ -58,9 +58,8 @@ class User extends UserBase
 	static $after_validation_on_update = array('check_password');
 	static $before_create = array('set_name', 'hash_password');
 	
-	private $original_password;
 	private $recover_mode = false;
-	public $current_password;
+	private $password_original;
 	public $password_confirmation;
 	
 	public static function getUserByLogin($loginData)
@@ -73,7 +72,7 @@ class User extends UserBase
 		if(! $user)
 			return false;
 		
-		if(!$user->passwordMatch($loginData['password']) and !$user->restoreOldPassword($loginData['password']))
+		if(!$user->passwordMatch($loginData['password']))
 			return false;
 		
 		$user->remember = (bool)$loginData['remember'];
@@ -103,7 +102,7 @@ class User extends UserBase
 	
 	public function set_password($password)
 	{
-		$this->original_password = $this->password;
+		$this->password_original = $this->password;
 		$this->assign_attribute('password', $password);
 	}
 	
