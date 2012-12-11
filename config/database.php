@@ -13,11 +13,11 @@ $db = array(
 			// Server of your database
 			'server'	=>	'localhost',
 			// Name of your database
-			'name'		=>	'sea',
+			'name'		=>	'lahectarea',
 			// User of your database
-			'user'		=>	'root',
+			'user'		=>	'local',
 			// User password
-			'password'	=>	'',
+			'password'	=>	'BvF9TVEMRRz4baYV',
 			// Connection charset
 			'charset'	=>	'utf8'
 		)

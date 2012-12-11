@@ -20,15 +20,18 @@ class Post extends ManyToMany
 		'title'			=>	'El título',
 		'image'			=>	'La imagen',
 		'content'		=>	'El contenido',
-		'description'	=>	'La descripción'
+		'description'	=>	'La descripción',
+		'permalink'		=>	'El enlace permanente'
 	);
 	static $attr_protected = array('user_id');
+	static $before_validation_on_create = array('generate_permalink');
 	static $after_save = array('applyChanges');
 	
 	static $validates_presence_of = array(
 		array('title'),
 		array('image'),
-		array('content')
+		array('content'),
+		array('permalink')
 	);
 	
 	public $apply = true;
@@ -76,6 +79,12 @@ class Post extends ManyToMany
 		
 		$this->assign_attribute('status', $status);
 	}
+
+	public function generate_permalink()
+	{
+		if(empty($this->permalink))
+			$this->permalink = Sea\PREG\toAscii($this->title);
+	}
 	
 	public function applyChanges()
 	{
@@ -95,7 +104,7 @@ class Post extends ManyToMany
 	
 	private function getManyValues($name)
 	{
-		$permalink = Utils::toAscii($name);
+		$permalink = Sea\PREG\toAscii($name);
 		
 		return array(
 			'permalink' => $permalink,
