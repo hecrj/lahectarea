@@ -3,7 +3,7 @@
 namespace App;
 
 const ENV		= 'development';    # Set to current environment
-const EMAIL		= 'soporte@lahectarea.es';
+const EMAIL		= 'webmaster@lahectarea.es';
 const DOMAIN    = 'lahectarea.com';
 
 # Load components configuration

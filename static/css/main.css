@@ -4706,6 +4706,9 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+.centered-text {
+  text-align: center;
+}
 html,
 body {
   height: 100%;
@@ -4748,6 +4751,9 @@ footer p {
   color: #555;
   font-size: 13px;
   margin: 0;
+}
+section iframe {
+  display: inline;
 }
 .navbar a.brand.pull-right {
   float: right;
@@ -4886,6 +4892,11 @@ article .filed {
   font-size: 12px;
   color: #777;
 }
+article iframe {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+}
 article h2,
 section h2 {
   color: #000;
@@ -4904,12 +4915,6 @@ section li {
   font-size: 17px;
   line-height: 1.5em;
   color: #222222;
-}
-article iframe,
-section iframe {
-  margin: 0 auto;
-  display: block;
-  clear: both;
 }
 article p,
 section p,
