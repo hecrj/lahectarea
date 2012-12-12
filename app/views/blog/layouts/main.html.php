@@ -9,7 +9,8 @@
 			<link href="<?= $css ?>" rel="stylesheet" />
 <?php endforeach; ?>
 		<script src="http://static.<?= App\DOMAIN ?>/js/jquery.min.js"></script>
-<!--		<script type="text/javascript">
+<?php if(App\ENV == 'production'): ?>
+		<script type="text/javascript">
 
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-20402927-1']);
@@ -21,7 +22,8 @@
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
-		</script> -->
+		</script>
+<?php endif; ?>
 	</head>
 	<body>
 		<div id="main">
