@@ -5,8 +5,6 @@
 		<title><?= $this->get('title') ? : 'Página sin título' ?> - la hectárea</title>
 		<link type="image/x-icon" rel="shortcut icon" href="http://static.<?= App\DOMAIN ?>/favicon.ico" />
 		<link href="http://static.<?= App\DOMAIN ?>/css/main.css" rel="stylesheet" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="http://static.<?= App\DOMAIN ?>/css/responsive.css" rel="stylesheet" />
 <?php foreach($this->helper('includes')->get('css') as $css): ?>
 		<link href="<?= $css ?>" rel="stylesheet" />
 <?php endforeach; ?>
