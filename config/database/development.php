@@ -1,13 +1,13 @@
 <?php
 
-# Database configuration
+# Database configuration for development environment
 $db = array(
 	
 	// Connections to database
 	'connections'	=>	array(
 		
-		// Development connection
-		'development'	=>	array(
+		// Default connection
+		'dev1'	=>	array(
 			// Database type
 			'type'		=>	'mysql',
 			// Server of your database
@@ -25,6 +25,6 @@ $db = array(
 	),
 	
 	// Default connection
-	'default'	=>	App\ENV # Current environment as default connection
+	'default'	=>	'dev1' # dev1 as default connection in development
 	
 );
