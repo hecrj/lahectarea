@@ -2,9 +2,8 @@
 
 namespace App;
 
-const ENV		= 'production';    # Set to current environment
-
 # Load environment constants
+require(__DIR__ . '/environment.php');
 require(__DIR__ .'/env/'. ENV . '.php');
 
 const EMAIL		= 'webmaster@lahectarea.es';
