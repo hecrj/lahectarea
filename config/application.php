@@ -2,7 +2,7 @@
 
 namespace App;
 
-const ENV		= 'development';    # Set to current environment
+const ENV		= 'production';    # Set to current environment
 
 # Load environment constants
 require(__DIR__ .'/env/'. ENV . '.php');

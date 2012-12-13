@@ -2,8 +2,7 @@
 	<h4 class="overview">
 		<a href="/articulo/<?= $post->permalink ?>"><?= $post->title ?></a>
 		<small>
-			<?= $this->helper('time')->getFormatted($post->published_at) ?>
-			&nbsp;
+			<?= $this->helper('time')->getFormatted($post->published_at) ?> 
 			<a href="/articulo/<?= $post->permalink ?>#disqus_thread"></a>
 		</small>
 	</h4>

@@ -3,5 +3,4 @@
 namespace App\Env;
 
 const DOMAIN = 'lahectarea.com';
-const EMULATE_CACHE = FALSE;
-
+const EMULATE_CACHE = TRUE;
