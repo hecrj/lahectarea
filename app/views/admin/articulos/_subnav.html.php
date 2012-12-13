@@ -2,7 +2,8 @@
 
 $subnav = $this->helper('simplenav');
 
-$subnav->item('Lista de artículos', '/articulos', array('highlights_on' => '/^\/(articulos)?$/'));
+$subnav->item('Lista de artículos', '/articulos', array(
+	'highlights_on' => '/^\/(articulos)?(\/([0-9]+))?$/'));
 $subnav->item('Redactar un artículo', '/articulos/redactar');
 
 $edit = $subnav->item('Editar un artículo', '#', array('highlights_on' => '/^\/articulos\/editar/'));

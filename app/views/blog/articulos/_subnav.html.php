@@ -2,7 +2,7 @@
 
 $subnav = $this->helper('simplenav');
 
-$subnav->item('Novedades', '/articulos');
+$subnav->item('Novedades', '/articulos', array('highlights_on' => '/^\/(articulos)?(\/([0-9]+))?$/'));
 $subnav->item('Los más leídos', '/articulos/leidos');
 
 $cat = $subnav->item('Explorar categoría', '#', array('highlights_on' => '/^\/categoria/'));
