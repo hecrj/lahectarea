@@ -12,6 +12,6 @@ ExpiresByType application/javascript A2592000
 ExpiresByType application/x-javascript A2592000
 
 RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^http://(.+\.)?lahectarea\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^http://(.+\.)?lahectarea\.es/ [NC]
 RewriteCond %{HTTP_REFERER} !^$
 RewriteRule .*\.(jpe?g|gif|bmp|png)$ - [F]
