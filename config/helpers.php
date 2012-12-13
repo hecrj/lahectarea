@@ -2,5 +2,5 @@
 
 namespace Sea\Helpers\Cache
 {
-	const EMULATE = TRUE;
+	const EMULATE = FALSE;
 }

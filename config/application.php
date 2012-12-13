@@ -2,9 +2,9 @@
 
 namespace App;
 
-const ENV		= 'development';    # Set to current environment
+const ENV		= 'production';    # Set to current environment
 const EMAIL		= 'webmaster@lahectarea.es';
-const DOMAIN    = 'lahectarea.com';
+const DOMAIN    = 'lahectarea.es';
 
 # Load components configuration
 require(__DIR__ . '/components.php');

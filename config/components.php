@@ -2,7 +2,7 @@
 
 namespace Sea\Components\Auth
 {
-	const KEY_SERVER = 'I am a Key, change me at your will';
+	const KEY_SERVER = 'i8ueEn4eBLnPEFsHJE11uzJUczCITw';
 	const URI_LOGIN  = '/cuenta/login';
 }
 
