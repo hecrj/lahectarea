@@ -2,7 +2,7 @@
 	<header>
 		<h1><?= $post->title ?></h1>
 		<h2><small>por</small> <?= $post->author ?> <small>el <?= $this->helper('time')->getFormatted($post->published_at) ?></small></h3>
-		<img src="<?= $post->image ?>" title="Imagen de <?= $post->title ?>" class="img-rounded" />
+		<img src="<?= $post->image ?>" title="Imagen de <?= $post->title ?>" />
 	</header>
 	<?= $this->helper('markdown')->translate($post->content) ?>
 <?php foreach($post->cattegories as $cattegory)
