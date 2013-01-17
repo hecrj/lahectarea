@@ -6,7 +6,7 @@
 		con el <strong>webmaster</strong> enviando un mensaje a la siguiente dirección de
 		correo electrónico:</p>
 	<p align="center">
-		<a href="mailto:soporte@lahectarea.es"><strong>webmaster@lahectarea.es</strong></a>
+		<a href="mailto:webmaster@lahectarea.es"><strong>webmaster@lahectarea.es</strong></a>
 	</p>
 	<p>Tu mensaje será respondido en el menor tiempo posible. ¡Ten paciencia!</p>
 </section>
