@@ -75,7 +75,7 @@ class User extends UserBase
 		if(!$user->passwordMatch($loginData['password']))
 			return false;
 		
-		$user->remember = (bool)$loginData['remember'];
+		$user->remember = isset($loginData['remember']) ? (bool)$loginData['remember'] : false;
 		
 		return $user;
 	}
